@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EDEAE0;
+  color: #182338;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.grid-paper-bg {
+  background-image:
+    linear-gradient(rgba(24, 35, 56, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 35, 56, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.stitch-line {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #A8823C 0,
+    #A8823C 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.stitch-line-horizontal {
+  background-image: repeating-linear-gradient(
+    to right,
+    #A8823C 0,
+    #A8823C 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+::selection {
+  background-color: #A8823C;
+  color: #EDEAE0;
+}
+
+:focus-visible {
+  outline: 2px solid #A8823C;
+  outline-offset: 3px;
+}
+
+.tabular-code {
+  font-variant-numeric: tabular-nums;
+}
