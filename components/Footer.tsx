@@ -1,12 +1,19 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
         <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
-              SCALOR / ACADEMY
-            </p>
+            <div className="h-8 w-[140px] relative">
+              <Image
+                src="/logo.png"
+                alt="SCALOR"
+                fill
+                className="object-contain object-left"
+              />
+            </div>
             <p className="mt-4 max-w-md font-display text-xl italic text-paper/85">
               La ciencia da fundamento. El arte da criterio.
             </p>

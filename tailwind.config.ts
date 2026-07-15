@@ -10,12 +10,12 @@ const config: Config = {
       colors: {
         paper: "#EDEAE0",
         "paper-dim": "#E2DECE",
-        ink: "#182338",
-        "ink-soft": "#2B3A54",
-        ledger: "#2F4A3E",
-        "ledger-soft": "#3E5F4F",
-        brass: "#A8823C",
-        "brass-light": "#C9A15C",
+        ink: "#0A0A0A",
+        "ink-soft": "#2B3A3A",
+        ledger: "#0C706E",
+        "ledger-soft": "#3E8F8C",
+        brass: "#0C706E",
+        "brass-light": "#3E9C99",
         rule: "#B9B29C",
       },
       fontFamily: {

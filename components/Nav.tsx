@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const links = [
   { href: "#que-es", label: "Qué es" },
   { href: "#niveles", label: "Niveles" },
@@ -10,11 +12,14 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/15 bg-paper/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 sm:px-10">
-        <a
-          href="#top"
-          className="font-mono text-sm font-semibold tracking-[0.2em] text-ink"
-        >
-          SCALOR<span className="text-brass">/</span>ACADEMY
+        <a href="#top" className="block h-7 w-[110px] relative">
+          <Image
+            src="/logo.png"
+            alt="SCALOR"
+            fill
+            className="object-contain object-left"
+            priority
+          />
         </a>
         <nav className="hidden gap-1 sm:flex">
           {links.map((link, i) => (
