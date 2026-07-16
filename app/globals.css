@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: #EDEAE0;
-  color: #182338;
+  background-color: #0A0F0D;
+  color: #EDEAE0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -27,16 +27,16 @@ body {
 
 .grid-paper-bg {
   background-image:
-    linear-gradient(rgba(24, 35, 56, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(24, 35, 56, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(237, 234, 224, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 234, 224, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 .stitch-line {
   background-image: repeating-linear-gradient(
     to bottom,
-    #A8823C 0,
-    #A8823C 6px,
+    #3C8563 0,
+    #3C8563 6px,
     transparent 6px,
     transparent 12px
   );
@@ -45,23 +45,49 @@ body {
 .stitch-line-horizontal {
   background-image: repeating-linear-gradient(
     to right,
-    #A8823C 0,
-    #A8823C 6px,
+    #3C8563 0,
+    #3C8563 6px,
     transparent 6px,
     transparent 12px
   );
 }
 
 ::selection {
-  background-color: #A8823C;
-  color: #EDEAE0;
+  background-color: #3C8563;
+  color: #0A0F0D;
 }
 
 :focus-visible {
-  outline: 2px solid #A8823C;
+  outline: 2px solid #3C8563;
   outline-offset: 3px;
 }
 
 .tabular-code {
   font-variant-numeric: tabular-nums;
+}
+
+/* Video con sombra profunda, para que "flote" sobre el fondo oscuro */
+.video-shadow {
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(60, 133, 99, 0.25);
+}
+
+/* Subrayado animado para los links del nav: crece de 0 a 100% en hover */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #66AB86;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  transform: scaleX(1);
 }

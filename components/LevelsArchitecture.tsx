@@ -2,10 +2,10 @@ import { levels } from "@/data/curriculum";
 
 export default function LevelsArchitecture() {
   return (
-    <section id="niveles" className="border-b border-ink/15 bg-ink text-paper">
+    <section className="bg-ledger text-paper">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-10">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
-          02 — Arquitectura por niveles
+          Arquitectura por niveles
         </p>
         <h2 className="mt-4 max-w-2xl font-display text-3xl font-medium leading-tight sm:text-4xl">
           Cuatro etapas empresariales, un mismo criterio
