@@ -27,7 +27,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SCALOR ACADEMY — Escuela de Administración Aplicada",
+  title: "SCALOR ACADEMY — La Ciencia y el Arte de Administrar",
   description:
     "SCALOR ACADEMY desarrolla criterio administrativo mediante una ruta progresiva de aprendizaje: administración, contabilidad, economía, finanzas, estrategia, operaciones, liderazgo, datos y ética.",
 };

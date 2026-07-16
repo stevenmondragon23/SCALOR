@@ -25,50 +25,64 @@ export default function Hero() {
       <div className="grid-paper-bg pointer-events-none absolute inset-0 opacity-40" />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-16 sm:px-10 sm:pt-24">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
-          SCALOR ACADEMY
-        </p>
-        <h1 className="mt-6 max-w-2xl font-display text-4xl font-medium leading-[1.05] text-paper sm:text-6xl">
-          La ciencia y el arte
-          <br />
-          de administrar con criterio
-        </h1>
-        <p className="mt-6 max-w-lg text-base leading-relaxed text-paper/70">
-          Una ruta progresiva de aprendizaje en administración, contabilidad,
-          economía, finanzas, estrategia, operaciones, liderazgo, datos y
-          ética — para quien tiene una idea, un negocio, una pequeña empresa
-          o una organización que dirigir.
-        </p>
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+          {/* Columna de texto */}
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
+              SCALOR ACADEMY
+            </p>
+            <h1 className="mt-6 font-display text-4xl font-medium leading-[1.05] text-paper sm:text-6xl lg:text-5xl">
+              La Ciencia y el Arte
+              <br />
+              de Administrar
+            </h1>
+            <p className="mt-4 max-w-lg font-display text-lg italic text-brass-light">
+              Comprender con ciencia. Decidir con arte. Administrar con
+              criterio.
+            </p>
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-paper/70">
+              Una ruta progresiva de aprendizaje en administración,
+              contabilidad, economía, finanzas, estrategia, operaciones,
+              liderazgo, datos y ética — para quien tiene una idea, un
+              negocio, una pequeña empresa o una organización que dirigir.
+            </p>
 
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <Link
-            href="/programas"
-            className="border border-brass px-6 py-3 font-mono text-xs uppercase tracking-widest text-paper transition-colors hover:bg-brass hover:text-ink"
-          >
-            Ver la malla · {totalCourses} cursos
-          </Link>
-          <Link
-            href="/nosotros"
-            className="nav-link px-2 py-3 font-mono text-xs uppercase tracking-widest text-paper/70 hover:text-paper"
-          >
-            Conoce SCALOR →
-          </Link>
-        </div>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/programas"
+                className="border border-brass px-6 py-3 font-mono text-xs uppercase tracking-widest text-paper transition-colors hover:bg-brass hover:text-ink"
+              >
+                Ver la malla · {totalCourses} cursos
+              </Link>
+              <Link
+                href="/nosotros"
+                className="nav-link px-2 py-3 font-mono text-xs uppercase tracking-widest text-paper/70 hover:text-paper"
+              >
+                Conoce SCALOR →
+              </Link>
+            </div>
+          </div>
 
-        {/* Video introductorio */}
-        <div className="mt-16">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
-            Video introductorio
-          </p>
-          <video
-            controls
-            preload="metadata"
-            poster="/intro-poster.jpg"
-            className="video-shadow mt-5 aspect-video w-full max-w-4xl rounded-sm bg-black"
-          >
-            <source src="/intro.mp4" type="video/mp4" />
-            Tu navegador no soporta la reproducción de video.
-          </video>
+          {/* Columna del video, con niebla verde detrás */}
+          <div className="relative">
+            {/* Niebla: un blob verde muy difuminado, detrás del video */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-10 -z-10 bg-ledger opacity-60 blur-3xl"
+            />
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass-light">
+              Video introductorio
+            </p>
+            <video
+              controls
+              preload="metadata"
+              poster="/intro-poster.jpg"
+              className="video-shadow relative mt-5 aspect-video w-full rounded-sm bg-black"
+            >
+              <source src="/intro.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
         </div>
 
         {/* Próximos pasos */}

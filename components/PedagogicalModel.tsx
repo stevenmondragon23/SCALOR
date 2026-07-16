@@ -130,16 +130,13 @@ export default function PedagogicalModel() {
           </div>
           <div className="border-l-2 border-brass bg-ink-soft/60 p-6">
             <p className="font-mono text-xs uppercase tracking-widest text-paper/50">
-              Referencia de calidad internacional
+              Nuestro estándar
             </p>
             <p className="mt-3 text-sm leading-relaxed text-paper/70">
-              No buscamos imitar formalmente una acreditación internacional
-              en esta etapa, pero sí adoptamos principios de calidad de la
-              educación empresarial global: misión clara, resultados de
-              aprendizaje, mejora continua, impacto, pensamiento aplicado,
-              rigor académico y vínculo con la realidad — coherente con la
-              orientación de AACSB hacia estándares basados en resultados,
-              misión, calidad e impacto.
+              Medimos cada curso con el mismo criterio: misión clara,
+              resultados de aprendizaje, mejora continua, impacto,
+              pensamiento aplicado, rigor y vínculo con la realidad de tu
+              negocio.
             </p>
           </div>
         </div>
